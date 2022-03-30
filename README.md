@@ -8,7 +8,7 @@ This App is a React Native made with:
 
 You need to install these in order to put this to work:
 `Amplify`
-> You will need your own supabase keys for this project!
+> You will need your own amplify user and keys for this project!
 __You can visit the Expo Publish by clickin' this link! (Coming Soon!)__
 
 [Book App](Coming Soon!)
