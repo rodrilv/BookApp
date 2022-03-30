@@ -1,20 +1,19 @@
+import React from "react";
+import Amplify from "aws-amplify";
+import { withAuthenticator } from "aws-amplify-react-native";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import MainNavigator from './src/Navigator';
+import { GlobalProvider } from './src/context/global/global.context';
+import awsconfig from "./src/aws-exports";
 
-export default function App() {
+Amplify.configure(awsconfig);
+
+function App({authData}) {
+  //console.log(authData)
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <GlobalProvider authData={authData}>
+      <MainNavigator />
+    </GlobalProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default withAuthenticator(App);
