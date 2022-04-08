@@ -6,8 +6,10 @@ export const getBooks = /* GraphQL */ `
     getBooks(id: $id) {
       id
       title
+      status
       author
       description
+      publish_date
       ISBN
       createdAt
       updatedAt
@@ -24,8 +26,10 @@ export const listBooks = /* GraphQL */ `
       items {
         id
         title
+        status
         author
         description
+        publish_date
         ISBN
         createdAt
         updatedAt

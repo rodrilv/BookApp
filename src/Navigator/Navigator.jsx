@@ -20,7 +20,7 @@ const options = ({route}) => ({
         ? "home-outline"
         : "home-outline"
       } else if(route.name === "Create Book"){
-        iconName = "ios-list"
+        iconName = "create-outline"
       } else if(route.name === "Info"){
           iconName = "ios-information-circle"
       }
@@ -54,5 +54,3 @@ export default function MainNavigator({}){
         </NavigationContainer>
     )
 }
-
-

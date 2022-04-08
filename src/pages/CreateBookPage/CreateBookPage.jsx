@@ -8,8 +8,10 @@ export default function CreateBook({}){
 
     const [book, setBook] = useState({
         "title": null,
+        "status": null,
         "author": null,
         "description": null,
+        "publish_date": null,
         "ISBN": null
     })
 
@@ -43,6 +45,13 @@ export default function CreateBook({}){
                 placeholder="Book Title"
             />
             <TextInput
+                onChangeText={(text) =>{
+                    setBook((current) => ({... current, status: text}))
+                }}
+                style={styles.input}
+                placeholder="Status"
+            />
+            <TextInput
             onChangeText={(text) =>{
                 setBook((current) => ({... current, author: text}))
             }}
@@ -55,6 +64,13 @@ export default function CreateBook({}){
             }}
                 style={styles.input}
                 placeholder="Description"
+            />
+            <TextInput
+            onChangeText={(text) =>{
+                setBook((current) => ({... current, publish_date: text}))
+            }}
+                style={styles.input}
+                placeholder="Publish Date"               
             />
             <TextInput
             onChangeText={(text) =>{
