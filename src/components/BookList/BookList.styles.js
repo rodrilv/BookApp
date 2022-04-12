@@ -22,5 +22,25 @@ export const styles = StyleSheet.create({
     description: {
         fontSize: 16, 
         fontStyle: "italic"
+    },
+    status1: {
+        fontSize: 14,
+        textAlign: "right",
+        color: "green"
+    },
+    status0 : {
+        fontSize: 14,
+        textAlign: "right",
+        color: "red"
+    },
+    date: {
+        fontSize: 11,
+        fontStyle: "normal"
+    },
+    image: {
+        alignContent: "center",
+        width: 150,
+        height: 100
     }
+    
 });
