@@ -5,14 +5,14 @@ export const styles = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: 90,
-      marginBottom: 90
+      //marginTop: 80,
+      //marginBottom: 10
     },
     button: {
       width: 150
     },
     input: {
-        height: 40,
+        height: 50,
         width: 180,
         margin: 5,
         borderWidth: 1,

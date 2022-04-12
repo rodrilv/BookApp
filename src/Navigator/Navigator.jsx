@@ -15,13 +15,13 @@ const options = ({route}) => ({
     tabBarIcon: ({focused, color, size}) =>{
       let iconName;
   
-      if(route.name === "Home"){
+      if(route.name === i18n.t("short-home")){
         iconName = focused
         ? "home-outline"
         : "home-outline"
-      } else if(route.name === "Create Book"){
+      } else if(route.name === i18n.t("short-create-book")){
         iconName = "create-outline"
-      } else if(route.name === "Info"){
+      } else if(route.name === i18n.t("user")){
           iconName = "ios-information-circle"
       }
       return <Ionicons name={iconName} size={size} color={color} />
@@ -33,6 +33,7 @@ const options = ({route}) => ({
 import HomePage from "../pages/HomePage";
 import CreateBook from "../pages/CreateBookPage";
 import InfoPage from "../pages/InfoPage";
+import i18n from "../localization/i18n";
 //Bottom Tab & Stack Navigator
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -45,10 +46,10 @@ export default function MainNavigator({}){
     return(
         <NavigationContainer>
            <Tab.Navigator screenOptions={options}>
-                <Tab.Screen name="Home" 
+                <Tab.Screen name={i18n.t("short-home")} 
                 children={(props) => (<HomePage />)} />
-                <Tab.Screen name="Create Book" component={CreateBook} />
-                <Tab.Screen name="Info" 
+                <Tab.Screen name={i18n.t("short-create-book")} component={CreateBook} />
+                <Tab.Screen name={i18n.t("user")} 
                 children={(props) => (<InfoPage onPress={logout} state={state}/>)} />
            </Tab.Navigator>
         </NavigationContainer>

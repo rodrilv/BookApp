@@ -1,0 +1,16 @@
+{
+    "home-page": "Homepage",
+    "short-home": "Home",
+    "books_available": "Books Available",
+    "short-create-book": "Create",
+    "create-book": "Create a Book",
+    "create-book-welcome": "Welcome to Create Book Page",
+    "update-book-welcome":"Update selected Book",
+    "user": "User",
+    "button-save": "Save",
+    "logout": "Log Out",
+    "nestedOptions":{
+        "opt1": "Available",
+        "opt2": "Not Available"
+    }
+}

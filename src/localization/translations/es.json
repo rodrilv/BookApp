@@ -1,0 +1,17 @@
+{
+    "home-page": "Página de Inicio",
+    "short-home": "Inicio",
+    "books_available": "Libros Disponibles",
+    "short-create-book": "Crear",
+    "create-book": "Crea un Libro",
+    "create-book-welcome": "Bienvenido a Creación de Libros",
+    "update-book-welcome":"Actualizar el Libro",
+    "user": "Perfil",
+    "button-save": "Guardar",
+    "logout": "Cerrar Sesión",
+    "nestedOptions":{
+        "opt1": "Disponible",
+        "opt2": "No Disponible"
+    }
+
+}
