@@ -3,6 +3,7 @@ import { View, Text, Button } from "react-native";
 import { styles } from "./Info.styles";
 import { Auth } from "aws-amplify";
 import i18n from "../../localization/i18n";
+import { Avatar } from "react-native-paper"
 
 export default function InfoPage({onPress, state}) {
   const logout = async () => {
