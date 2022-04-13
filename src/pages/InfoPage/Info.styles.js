@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: 'center',
       justifyContent: 'center',
-      flexDirection: 'row',
-      paddingVertical: 30,
+      //flexDirection: 'row',
+      //paddingVertical: 30,
   },
   iconUser:{
     backgroundColor: 'white',
