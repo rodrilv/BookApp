@@ -18,7 +18,7 @@ export default function InfoPage({ onPress, state }) {
       <Avatar.Image
         rounded
         style={styles.iconUser}
-        source={require("../../../Media/imagenes/user-ico.png")}
+        source={require("../../../assets/user-ico.png")}
       />
       <Text>{state.attributes.email}</Text>
       <View style={{ margin: 12, width: 200 }}>
